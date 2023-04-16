@@ -312,8 +312,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
    goto3Pendulum();
 
-   scene.substeps = 1;
-
    let update = (delta: number) => {
       scene.update(delta);
    };
