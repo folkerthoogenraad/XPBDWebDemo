@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   
+   <meta name="Description" content="An example implementation of extended position based dynamics.">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+   <title>XPBD Example</title>
+
+   <script src="./bundle.js"></script>
+</head>
+<body>
+   <div class="menu init" id="menu">
+      <div class="menu-header">Simulations</div>
+      <div id="scene-pendulum-3" class="menu-item">Double Pendulum</div>
+      <div id="scene-pendulum-4" class="menu-item">Triple Pendulum</div>
+      <div id="scene-pendulum-10" class="menu-item">10 Pendulum</div>
+      <div id="scene-rope-soft" class="menu-item">Soft rope</div>
+      <div id="scene-bridge" class="menu-item">Bridge</div>
+      <div id="scene-cloth" class="menu-item">Cloth</div>
+      <div id="scene-engine-4" class="menu-item">4 Cylinder Engine</div>
+      <div id="scene-engine-10" class="menu-item">10 Cylinder Engine</div>
+      <div id="scene-engine-100" class="menu-item">100 Cylinder Engine</div>
+      <div id="scene-complicated" class="menu-item">Complicated</div>
+      
+      <div class="menu-header">Solver substeps</div>
+      <div id="settings-substep-1"  class="menu-item"> 1 Substep </div>
+      <div id="settings-substep-10"  class="menu-item"> 20 Substeps </div>
+      <div id="settings-substep-100"  class="menu-item"> 100 Substeps </div>
+      <div id="settings-substep-1000"  class="menu-item"> 1000 Substeps </div>
+      <div id="settings-substep-10000"  class="menu-item"> 10000 Substeps </div>
+      
+      <div class="menu-header">Gravity rate</div>
+      <div id="settings-gravity-1"  class="menu-item"> x1 </div>
+      <div id="settings-gravity-2"  class="menu-item"> x2 </div>
+      <div id="settings-gravity-4"  class="menu-item"> x4 </div>
+      <div id="settings-gravity-8"  class="menu-item"> x8 </div>
+
+      <div class="menu-header">Debug</div>
+      <div id="settings-toggle-overlay" class="menu-item">Toggle debug overlay</div>
+
+      <div class="menu-header">Source code and info</div>
+      <a href="https://github.com/folkerthoogenraad/XPBDWebDemo" target="_blank" class="menu-item">Source code</a>
+      <a href="https://matthias-research.github.io/pages/publications/PBDBodies.pdf" target="_blank" class="menu-item">Paper by Muller et al.</a>
+   </div>
+   <div class="menu-button" id="menu-button">
+      <div class="menu-bar top"></div>
+      <div class="menu-bar mid"></div>
+      <div class="menu-bar bottom"></div>
+   </div>
+
+   <div class="container">
+      <canvas id="canvas"></canvas>
+      <div class="credits-overlay">
+         Folkert Hoogenraad &copy;
+      </div>
+      <div class="info-overlay" id="info-overlay">
+         60Hz
+      </div>
+   </div>
+</body>
+</html>
