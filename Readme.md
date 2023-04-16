@@ -1,7 +1,9 @@
 # XPBD Constraint solver physics
 A readable implementation of **E**xtended **P**osition **B**ased **D**ynamics (or XPBD) for rigid body simulations. The implementation is largly based on this [excellent paper](https://matthias-research.github.io/pages/publications/PBDBodies.pdf) by [Muller et al.](https://matthias-research.github.io/pages/index.html).
 
-This implementation is focussed on the basics of the constraints solving and the impulse/velocity calculations. The implementation is 2D and can be 'played' in your webbrowser [here](google.com). There is no collision detection and/or resolution in this example. However, this would be rather easy to implement given the existing impulse methods. This is by no means a complete implementation with all features and should not be used as a library in whatever software you are building. However, it can serve as a good starting point or a reference implementation.
+[Try it out here!](https://justf.net/XPBDWebDemo/)
+
+This implementation is focussed on the basics of the constraints solving and the impulse/velocity calculations. The implementation is 2D and can be 'played' in your webbrowser [here](https://justf.net/XPBDWebDemo/). There is no collision detection and/or resolution in this example. However, this would be rather easy to implement given the existing impulse methods. This is by no means a complete implementation with all features and should not be used as a library in whatever software you are building. However, it can serve as a good starting point or a reference implementation.
 
 The implementation was created as a proof of concept for [Ange's Engine simulator](https://www.youtube.com/watch?v=RKT-sKtR970). There is **no affiliation** between him and this demo.
 

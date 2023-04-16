@@ -17,7 +17,7 @@ let graphics: Graphics2D;
 let scene: SolverScene;
 
 let sceneName: string = "";
-let substeps: number = 1;
+let substeps: number = 10;
 let gravityRate: number = 1;
 let timeRate: number = 1;
 let drawOverlay: boolean = false;
@@ -177,6 +177,7 @@ function setupButtons(){
 
    clickOn("settings-substep-1", () => setSolverRate(1));
    clickOn("settings-substep-10", () => setSolverRate(10));
+   clickOn("settings-substep-20", () => setSolverRate(20));
    clickOn("settings-substep-100", () => setSolverRate(100));
    clickOn("settings-substep-1000", () => setSolverRate(1000));
    clickOn("settings-substep-10000", () => setSolverRate(10000));
